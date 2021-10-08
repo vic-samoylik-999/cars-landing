@@ -1,0 +1,95 @@
+.contacts {
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+	}
+
+	&__title {
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		margin: 0px 0px 20px 0px;
+	}
+
+	&__item-title {
+		color: $accent;
+	}
+
+	&__item-text {
+	}
+
+	&__form {
+		background-color: $brand;
+		padding: 50px 75px 57px;
+		text-align: center;
+	}
+
+	&__label.title {
+		color: #fff;
+		margin: 0 0 16px 53px;
+		text-align: left;
+		&::after {
+			background-color: #fff;
+		}
+	}
+
+	&__input {
+		color: #fff;
+		background-color: transparent;
+		width: 450px;
+		height: 75px;
+		border: 1px solid #fff;
+		margin: 0px 0px 12px 0px;
+		display: block;
+		font-size: 24px;
+		padding: 0 15px;
+		text-align: center;
+		&::placeholder {
+			text-align: center;
+			font-size: 18px;
+			line-height: 27px;
+			font-weight: 300;
+			color: $gray;
+			font-family: 'Oswald', sans-serif;
+		}
+	}
+
+	&__btn {
+		border: none;
+		color: #fff;
+		margin: 78px 0px 0px 0px;
+		cursor: pointer;
+	}
+	@media (max-width: 930px) {
+		&__body {
+			display: block;
+			text-align: center;
+		}
+		&__list {
+			margin-bottom: 30px;
+		}
+		&__input {
+			width: 100%;
+		}
+		&__btn {
+			margin-top: 20px;
+		}
+		&__label.title {
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+	@media (max-width: 930px) {
+		&__form {
+			padding: 50px 10px 57px;
+		}
+	}
+}

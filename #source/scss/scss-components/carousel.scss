@@ -1,0 +1,75 @@
+.carousel {
+	margin: 0px 0px 100px 0px;
+	&__title {
+	}
+
+	&__body {
+		margin: 0 -7px;
+	}
+
+	&__item {
+	}
+
+	&__item-box {
+		border: 1px solid $gray;
+		padding: 6px 6px 16px 6px;
+		margin: 0 7px;
+		text-align: center;
+		transition: .4s;
+		&:hover {
+			color: #fff;
+			background-color: $accent;
+			border: 1px solid $accent;
+			transition: .4s;
+		}
+	}
+
+	&__item-photo {
+		max-width: 100%;
+		margin: 0px 0px 23px 0px;
+	}
+
+	&__item-label {
+		font-weight: 300;
+		margin: 0px 0px 5px 0px;
+	}
+
+	&__item-economy {
+	}
+
+	.slick-dots {
+		display: flex;
+		justify-content: center;
+		margin: 50px 0px 0px 0px;
+		list-style: none;
+		button {
+			font-size: 0;
+			border: none;
+			padding: 0;
+			margin: 0 10px;
+			height: 1px;
+			width: 50px;
+			background-color: $gray;
+		}
+	}
+	.slick-active {
+		button {
+			background-color: $accent;
+			height: 3px;
+		}
+	}
+	@media (max-width: 600px) {
+		&__item-photo {
+			width: 100%;
+		}
+	}
+	@media (max-width: 520px) {
+		.slick-dots {
+			button {
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+			}
+		}
+	}
+}

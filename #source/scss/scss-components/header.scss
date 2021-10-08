@@ -1,0 +1,129 @@
+.header {
+	background: url('../img/hero.jpg') top center / cover no-repeat;
+	min-height: 700px;
+	color: #fff;
+	&__top {
+		padding: 47px 0px 45px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+	}
+
+	&__phone {
+		font-size: 36px;
+		line-height: 54px;
+	}
+
+	&__body {
+		padding: 60px 0px 0px 0px;
+		position: relative;
+	}
+
+	&__title,
+	&__subtitle {
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-size: 72px;
+		line-height: 107px;
+	}
+
+	&__subtitle {
+		font-size: 36px;
+		line-height: 54px;
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__text {
+		margin: 0px 0px 30px 0px;
+		max-width: 800px;
+	}
+
+	&__button {
+		padding: 14px 54px 15px;
+	}
+
+	&__social {
+		padding: 70px 0 20px 70px;
+	}
+
+	&__social-link {
+		display: flex;
+		align-items: center;
+	}
+
+	&__social-image {
+	}
+
+	&__images {
+		position: absolute;
+		right: 0;
+		bottom: -270px;
+	}
+	// Media Queries&__title {
+	@media (max-width: 1024px) {
+		&__images {
+			width: 80%;
+		}
+	}
+	@media (max-width: 900px) {
+		&__phone {
+			font-size: 24px;
+			line-height: 36px;
+		}
+		&__title {
+			font-size: 54px;
+			line-height: 74px;
+		}
+		&__subtitle {
+			font-size: 24px;
+			line-height: 36px;
+			margin: 0px 0px 20px 0px;
+		}
+		&__social {
+			padding: 30px 0 20px 53px;
+			
+		}
+	}
+	@media (max-width: 600px) {
+		&__body {
+			padding: 0;
+		}
+		&__social {
+			padding: 30px 0 20px 0px;
+		}
+	}
+	@media (max-width: 520px) {
+		&__top {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+		&__body {
+			text-align: center;
+		}
+		&__logo {
+			margin: 0px 0px 20px 0px;
+			width: 100%;
+		}
+		&__title {
+			margin: 0px 0px 20px 0px;
+		}
+		&__images {
+			position: static;
+			width: 100%;
+		}
+	}
+	@media (max-width: 340px) {
+		&__title {
+			font-size: 44px;
+			line-height: 50px;
+		}
+	}
+}
+

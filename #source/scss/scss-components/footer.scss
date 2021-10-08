@@ -1,0 +1,31 @@
+.footer {
+	background-color: $brand;
+	color: #fff;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+	}
+
+	&__social {
+	}
+
+	&__copyright {
+		
+	}
+	@media (max-width: 650px) {
+		&__row {
+			flex-wrap: wrap;
+			justify-content: center;
+			height: auto;
+			padding: 20px 0;
+			text-align: center;
+		}
+		&__social {
+			width: 100%;
+			justify-content: center;
+			margin: 25px 0;
+		}
+	}
+}
